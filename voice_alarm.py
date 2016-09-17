@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+# For this script to work you need gTTS, SpeechRecognition, pyaudio, mpg321, flac installed
+# https://pypi.python.org/pypi/SpeechRecognition/
+
 from gtts import gTTS
 import speech_recognition as sr
 import os
@@ -53,6 +56,7 @@ def main():
             play_text_to_speech_file(annoy_person)
             break
 
+        print("You said")
         print(speech)
 
 if __name__ == "__main__":
